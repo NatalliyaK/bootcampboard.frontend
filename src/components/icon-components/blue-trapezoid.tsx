@@ -1,0 +1,1 @@
+export {ReactComponent as BlueTrapezoid} from '../../img/trapesoid-svg/blue-trapezoid.svg';

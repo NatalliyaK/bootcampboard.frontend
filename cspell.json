@@ -1,0 +1,26 @@
+{
+  "ignorePaths": ["node_modules", "*.svg"],
+  "languageSettings": [
+    {
+      "locale": "en_US"
+    }
+  ],
+  "ignoreRegExpList": [],
+  "words": [
+    "bootcampboard",
+    "Bootcamp",
+    "webfonts",
+    "TTFB",
+    "stylelint",
+    "reduxjs",
+    "hintrc",
+    "Natallia",
+    "Kancelarchyk",
+    "Sergey",
+    "Kryvulko",
+    "Shliapik",
+    "reauth",
+    "bcboard",
+    "listitem"
+  ]
+}

@@ -1,0 +1,40 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+@import '../../styles/mixins.scss';
+
+.block {
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 0 $color-block-shadow;
+    background-color: $color-bg-modal;
+    width: 432px;
+    height: 184px;
+    border-width: 1px 1px 1px 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent $color-border-input-focus;
+
+    &:hover {
+      border: 1px solid $color-border-input-focus;
+      border-left: 8px solid $color-border-input-focus;
+      cursor: pointer;
+    }
+
+    .pop-up-wrapper {
+      position: absolute;
+      top: 56px;
+      right: 12px;
+      z-index: 1;
+    }
+  }
+
+  &__title {
+    @include body-medium-regular;
+
+    white-space: pre-wrap;
+  }
+}

@@ -1,0 +1,13 @@
+@import './breakpoints.scss';
+
+@mixin large() {
+  @media only all and (max-width: $large-size) {
+    @content;
+  }
+}
+
+@mixin x-large() {
+  @media only all and (max-width: $x-large-size) {
+    @content;
+  }
+}

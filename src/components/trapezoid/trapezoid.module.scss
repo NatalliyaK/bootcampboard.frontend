@@ -1,0 +1,34 @@
+@import '../../styles/typography.scss';
+@import '../../styles/colors.scss';
+
+.wrapper {
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    position: relative;
+
+    span {
+      @include headline-3;
+
+      color: $color-bg-modal;
+      position: absolute;
+      top: 30%;
+      left: 47%;
+    }
+
+    span ~ span {
+      @include text;
+
+      position: absolute;
+      top: 50%;
+      left: 30%;
+    }
+  }
+}
+

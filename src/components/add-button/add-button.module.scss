@@ -1,0 +1,17 @@
+@import '../../styles/colors';
+@import '../../styles/typography';
+
+.button {
+    @include button;
+    width: 172px;
+    height: 48px;
+    background: $color-primary-default;
+    padding: 12px 32px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}

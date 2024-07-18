@@ -1,0 +1,60 @@
+@import '../../styles/typography.scss';
+@import '../../styles/colors.scss';
+
+.wrapper {
+  max-width: 1334px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.users {
+  background: $color-bg-modal;
+  border-radius: 12px;
+  padding: 24px;
+  height: 827px;
+
+  &-title {
+    padding: 24px 0 16px;
+    &:first-letter {
+      color: $color-text-title-start;
+    }
+  }
+
+  &-table {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 32px;
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: left;
+    }
+
+    table tr {
+      border-bottom: 1px solid $color-border-input-default;
+      &:hover{
+        background-color: rgba(123, 206, 206, 0.12);
+        border-bottom: 2px solid #7bcece;
+      }
+    }
+
+    table th,
+    table td {
+      padding: 16px 0;
+    }
+
+    table tr th:first-child,
+    table tr td:first-child, {
+      padding-left: 24px;
+    }
+
+    table tr th:last-child,
+    table tr td:last-child {
+      padding-right: 24px;
+      text-align: center;
+    }
+  }
+}

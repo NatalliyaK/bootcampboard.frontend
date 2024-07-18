@@ -1,0 +1,47 @@
+@import '../../styles/typography.scss';
+@import '../../styles/colors.scss';
+
+.user-menu {
+  span {
+    display: block;
+    text-align: center;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: $color-white;
+    margin: 3px auto;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--disabled {
+    span {
+      background-color: $color-text-placeholder-error;
+    }
+      &:hover {
+        cursor: not-allowed;
+      }
+  }
+}
+@import '../../styles/typography.scss';
+@import '../../styles/colors.scss';
+
+.row {
+  &.active {
+    background-color: $color-primary-focus;
+    border-bottom: 2px solid $color-primary-default;
+  }
+}
+
+.activity {
+  position: relative;
+
+  .pop-up-wrapper {
+    position: absolute;
+    top: 50px;
+    right: 45%;
+    z-index: 1;
+  }
+}
